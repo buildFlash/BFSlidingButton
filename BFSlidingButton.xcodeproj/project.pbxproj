@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E781993623F8FD5B00B60AEB /* BFSlidingButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E781993423F8FD5B00B60AEB /* BFSlidingButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E781993E23F9001300B60AEB /* BFSlidingButtonTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E781993C23F9001300B60AEB /* BFSlidingButtonTrackLayer.swift */; };
+		E781993F23F9001300B60AEB /* BFSlidingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E781993D23F9001300B60AEB /* BFSlidingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E781993123F8FD5B00B60AEB /* BFSlidingButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFSlidingButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E781993423F8FD5B00B60AEB /* BFSlidingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFSlidingButton.h; sourceTree = "<group>"; };
 		E781993523F8FD5B00B60AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E781993C23F9001300B60AEB /* BFSlidingButtonTrackLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFSlidingButtonTrackLayer.swift; sourceTree = "<group>"; };
+		E781993D23F9001300B60AEB /* BFSlidingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFSlidingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		E781993323F8FD5B00B60AEB /* BFSlidingButton */ = {
 			isa = PBXGroup;
 			children = (
+				E781993D23F9001300B60AEB /* BFSlidingButton.swift */,
+				E781993C23F9001300B60AEB /* BFSlidingButtonTrackLayer.swift */,
 				E781993423F8FD5B00B60AEB /* BFSlidingButton.h */,
 				E781993523F8FD5B00B60AEB /* Info.plist */,
 			);
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					E781993023F8FD5B00B60AEB = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E781993F23F9001300B60AEB /* BFSlidingButton.swift in Sources */,
+				E781993E23F9001300B60AEB /* BFSlidingButtonTrackLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		E781993A23F8FD5B00B60AEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6A84S2YL64;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.buildflash.BFSlidingButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		E781993B23F8FD5B00B60AEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6A84S2YL64;
